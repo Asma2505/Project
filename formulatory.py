@@ -4,7 +4,7 @@ import pandas as pd
 # Load dataset
 @st.cache_data
 def load_data():
-    return pd.read_csv("data/updated_prescription_dates.csv")
+    return pd.read_csv("updated_prescription_dates.csv")
 
 df = load_data()
 
@@ -74,3 +74,4 @@ if selected_drugs:
             st.success(f"🎉 **You Could Save:** ${savings:,.2f}")
         else:
             st.info("No cheaper alternatives available for the selected drugs.")
+
