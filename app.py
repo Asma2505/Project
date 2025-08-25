@@ -1,10 +1,10 @@
 import streamlit as st
-from streamlit_extras.switch_page_button import switch_page
+
 # App Configuration
-st.set_page_config(page_title="PBM Optimization", page_icon="💊", layout="centered")
+st.set_page_config(page_title="Pharmacy Benefit Management Optimization", page_icon="💊", layout="centered")
 
 # Centered Title
-st.markdown("<h1 style='text-align:center;'>PBM Optimization</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align:center;'>Pharmacy Benefit Management Optimization(PBM)</h1>", unsafe_allow_html=True)
 st.write("---")
 
 # Dropdown for navigation
@@ -19,13 +19,10 @@ option = st.selectbox(
 )
 
 if option == "Real Time Formulary Impact Analysis":
-    switch_page("formulatory")
+    st.switch_page("pages/formulatory.py")
 elif option == "Therapeutic Equivalence Optimization":
-    switch_page("equivalence")
+    st.switch_page("pages/equivalence.py")
 elif option == "Drug Utilization Trend Prediction":
-    switch_page("trendprediction")
-
-
-
+    st.switch_page("pages/trendprediction.py")
 
 
