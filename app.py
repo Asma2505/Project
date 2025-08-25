@@ -20,11 +20,12 @@ option = st.selectbox(
 )
 
 if option == "Real Time Formulary Impact Analysis":
-    st.switch_page("formulatory")
+    st.switch_page("formulary")
 elif option == "Therapeutic Equivalence Optimization":
     st.switch_page("equivalence")
 elif option == "Drug Utilization Trend Prediction":
     st.switch_page("trendprediction")
+
 
 
 
