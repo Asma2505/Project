@@ -14,8 +14,7 @@ option = st.selectbox(
         "Choose an option",
         "Real Time Formulary Impact Analysis",
         "Therapeutic Equivalence Optimization",
-        "Drug Utilization Trend Prediction",
-        "Cost Per Member Per Month Tracking"
+        "Drug Utilization Trend Prediction"
     ]
 )
 
@@ -25,5 +24,6 @@ elif option == "Therapeutic Equivalence Optimization":
     st.switch_page("pages/equivalence.py")
 elif option == "Drug Utilization Trend Prediction":
     st.switch_page("pages/trendprediction.py")
+
 
 
