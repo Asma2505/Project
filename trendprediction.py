@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 # -------------------------------
 # Load trained model and encoders
 # -------------------------------
-model_path = "data/drug_trend3rd.pkl"
+model_path = "drug_trend3rd.pkl"
 with open(model_path, "rb") as f:
     saved = pickle.load(f)
 
@@ -17,7 +17,7 @@ label_encoders = saved["encoders"]
 # -------------------------------
 # Load dataset
 # -------------------------------
-data_path = "data/train3.csv"
+data_path = "train3.csv"
 df = pd.read_csv(data_path)
 
 # -------------------------------
@@ -110,4 +110,5 @@ elif option == "Understand the Pattern":
         ax.grid(True)
         st.pyplot(fig)
     else:
+
         st.warning("No data available for this drug and year.")
