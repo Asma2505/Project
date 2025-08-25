@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit_extras.switch_page_button import switch_page
 
 # App Configuration
 st.set_page_config(page_title="Pharmacy Benefit Management Optimization", page_icon="💊", layout="centered")
@@ -24,6 +25,7 @@ elif option == "Therapeutic Equivalence Optimization":
     st.switch_page("equivalence")
 elif option == "Drug Utilization Trend Prediction":
     st.switch_page("trendprediction")
+
 
 
 
