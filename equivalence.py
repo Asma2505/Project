@@ -40,7 +40,7 @@ def load_data(file_path):
     df.fillna("NULL", inplace=True)
     return df
 
-file_path = "data/updated_prescription_dates.csv"   # keep your file in same folder
+file_path = "updated_prescription_dates.csv"   # keep your file in same folder
 df = load_data(file_path)
 
 # -----------------------------
@@ -142,3 +142,4 @@ if medicine_input:
     st.markdown(result, unsafe_allow_html=True)   # Allow HTML for <br> line breaks
 else:
     st.warning("Please select or type a medicine name.")
+
